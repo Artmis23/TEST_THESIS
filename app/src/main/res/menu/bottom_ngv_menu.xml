@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Menu"
+        android:icon="@drawable/ic_menu"/>
+    <item
+        android:id="@+id/nav_alarm"
+        android:title="Alarm"
+        android:icon="@drawable/ic_alarm"/>
+    <item
+        android:id="@+id/nav_cam"
+        android:title="Camera"
+        android:icon="@drawable/ic_cam"/>
+    <item
+        android:id="@+id/nav_hand"
+        android:title="Hand detection"
+        android:icon="@drawable/ic_hand"/>
+
+    <item
+        android:id="@+id/nav_mic"
+        android:title="Microphone"
+        android:icon="@drawable/ic_mic"/>
+</menu>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome">
+
+    <RelativeLayout
+        android:id="@+id/bg1"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:background="@drawable/bg_top">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/bold"
+            android:text="WELCOME TO IOT SMARTHOME"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/light"
+            android:text="Connectivity Management"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bg2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bg1">
+
+
+        <EditText
+            android:id="@+id/edt_wlemail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="3dp"
+            android:autofillHints="phone number"
+            android:background="@drawable/bg_radius"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:hint="E-mail"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edt_wlpass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/edt_wlemail"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="3dp"
+            android:autofillHints="phone number"
+            android:background="@drawable/bg_radius"
+            android:drawableStart="@drawable/ic_key"
+            android:drawablePadding="10dp"
+            android:hint="password"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/edt_wlpass"
+            android:layout_gravity="end"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg_login"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="login"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="28dp"
+            android:text="Forgot password?"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/wlregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="28dp"
+            android:layout_toEndOf="@+id/forgot"
+            android:text="Register"
+            android:textColor="@color/black">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
